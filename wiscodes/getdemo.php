@@ -24,8 +24,8 @@
         // Connect to the database
         $servername = "localhost";
         $username = "root"; // Replace with your database username
-        $password = "root"; // Replace with your database password
-        $dbname = "search_db"; // The database we created earlier
+        $password = ""; // Replace with your database password
+        $dbname = "phpadmin"; // The database we created earlier
 
         // Create a connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -107,7 +107,7 @@
 <a href="search.txt">Source Code</a>
 
 
-<h3>   
+<h3>    
     Explanation:
 </h3>
 Database Connection:

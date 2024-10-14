@@ -6,24 +6,19 @@
     <title>PHP Inputs</title>
 </head>
 <body>
-<form method="post" action="forms.php">
-
-<label for="name">Enter Your First Name:</label><br>
-<input type="text" id="name" name="name"><br>
-
-<label for="lastname">Enter Your Last Name:</label><br>
-<input type="text" id="lastname" name="lastname"><br>
-
-<label for="age">Enter your Age:</label><br>
-<input type="number" id="age" name="age"><br>
-
-<input type="submit" value="Submit">
-
-</form>
+    <form method="post" action ="forms/forms.php ">
+        <label for="name">Enter Your First Name:</label><br>
+        <input type="text" id= "name" name="name"><br>
+        <label for="lastname">Enter Your Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        <label for="age">Enter your Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <input type="submit" value= "Submit"><br>
+        </form>
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST"  ){
             $name=htmlspecialchars($_POST['name']);
-            $age=htmlspecialchars($_POST['edad']);
+            $age=htmlspecialchars($_POST['age']);
             $lastname=htmlspecialchars($_POST['lastname']);
 
             echo "<h3>You Inputs</h3>";

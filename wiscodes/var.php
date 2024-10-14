@@ -6,7 +6,7 @@
     <title>PHP Variables</title>
 </head>
 <body>
-   <h1>Variable Declaration</h1>
+<h1>Variable Declaration</h1>
     <p>$variableName=value;</p> 
 
 
