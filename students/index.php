@@ -10,6 +10,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Student List</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <h2>Student List</h2>
@@ -17,7 +18,6 @@ $result = $conn->query($sql);
 
     <table border="1">
         <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>Actions</th>
@@ -26,12 +26,11 @@ $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 echo "<tr>
-                        <td>{$row['ID']}</td>
                         <td>{$row['name']}</td>
                         <td>{$row['email']}</td>
                         <td>
-                            <a href='edit.php?id={$row['ID']}'>Edit</a> |
-                            <a href='delete.php?id={$row['ID']}'>Delete</a>
+                            <a href='edit.php?id={$row['id']}'>Edit</a> |
+                            <a href='delete.php?id={$row['id']}'>Delete</a>
                         </td>
                         </tr>";
             }
